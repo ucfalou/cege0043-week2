@@ -69,6 +69,11 @@ function loadEarthquakelayer(earthquakedata) {
 // change the map zoom so that all the data is shown
   mymap.fitBounds(earthquakelayer.getBounds());
 }
+var earthquakelayer;
+function removeEarthquakeData() {
+alert("Earthquake data will be removed");
+mymap.removeLayer( earthquakelayer );
+}
 </script>
 <button id="removeEarthquakeData" name="removeEarthquakeData"
 onclick="removeEarthquakeData()">Click here to remove the Earthquake data </button>
